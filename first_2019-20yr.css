@@ -1,0 +1,290 @@
+::-webkit-scrollbar{
+    display: none;
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-bar{
+    background: #252324;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    font-weight: bolder;
+}
+.menu-bar ul{
+display: inline-flex;
+list-style: none;
+color:white;
+}
+.menu-bar ul li{
+    width:120px;
+    margin:15px;
+    padding:15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+.active, .menu-bar ul li:hover{
+    background: dodgerblue ;
+    border-radius: 3px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #252324;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li :last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: aqua;
+}
+.fa fa-angle-right{
+    float:right;
+}
+.sub-menu-2{
+    display: none;
+
+}
+.hover-me:hover .sub-menu-2{
+position: absolute;
+display: block;
+margin-top: -40px;
+margin-left: 140px;
+background:#252324;
+}
+.sub-menu-3{
+    display: none;
+}
+.hover-me-2:hover .sub-menu-3{
+    position: absolute;
+display: block;
+margin-top: -40px;
+margin-left: 140px;
+background: #252324;
+}
+.sub-menu-4{
+    display: none;
+}
+.hover-me-3:hover .sub-menu-4{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background:#252324 ;
+
+}
+   .logo img{
+       position: absolute;
+       margin-top: -15px;
+       margin-left: 5px;
+       margin-bottom: 20px;
+       z-index: 100;
+   }
+   .aktu_image{
+    margin:40px;
+    position:relative;
+    top:50px;
+   }
+   .theory{
+    position:relative;
+    margin: 50px;
+     text-align:center;
+      top:-190px;
+      right:10px;
+      font-family: 'Mali', cursive;
+      font-size:37px;
+      font-weight: bolder;
+      
+   }
+   .content{
+    position: relative;
+    margin:-35px;
+    font-size:20px;
+    left:80px;
+    font-style: italic;
+   
+   }
+   .selec{
+   
+    font-family: 'Russo One', sans-serif;
+    position:relative;
+           top:-120px;
+           left:35px;
+       text-decoration: none;
+       text-align: center;
+
+   }
+   .h2 button{
+    position: relative;
+    font-size: x-large;
+    font-family: 'Russo One', sans-serif;
+    left:600px;
+    top:-70px;
+  border-radius: 10px;
+background: green;
+ color: white;
+ font-size: 30px;
+    
+   }
+.pyq  ul{
+    position: absolute;
+    top:600px;
+    left:50%;
+    padding:0;
+    margin: 0;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.pyq  ul li{
+    list-style: none;
+    margin: 0 15px;
+
+}
+.pyq  ul li .fa{
+    font-size: 100px;
+    line-height: 60px;
+    transition: .6s;
+    color: red;
+}
+.pyq ul li .fa:hover{
+color: red;
+}
+.pyq  ul li a{
+    position: relative;
+    display: block;
+    width: 200px;
+    height:60px;
+    font-size:120px;
+    text-decoration:none;
+    text-align: center;
+    transition: .6s;
+    color:green;
+}
+.pyq ul li a:hover{
+    transform: translate(0,-10px);
+    color:darkblue;
+    box-shadow: red;
+}
+ .pyq span{
+
+    position: relative;
+    font-size: 20px;
+    top:15px;
+    color:black;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+}
+
+footer{
+    position: relative;
+    bottom: -400px;
+    left: -8px;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 150vw;
+    font-family: "'Kanit', sans-serif";
+    padding-top: 40px;
+    color: #fff;
+
+}
+.footer-content{
+    position: relative;
+    top: -200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-right:600px;
+    font-family: 'Inter', sans-serif;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight:bolder;
+    text-transform: capitalize;
+    line-height: 3rem;
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 35px;
+    font-weight: bold;
+  
+}
+.socials{
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    padding-left: 6px;
+    size: 20px;
+    letter-spacing: 30px;
+    top: 30px;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 40px;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: red;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+ .av p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.foot{
+    position:relative;
+    padding-left: 100px;
+    top:40px;
+}    

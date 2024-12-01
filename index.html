@@ -1,0 +1,788 @@
+
+
+<!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+<!DOCTYPE html><html lang='en' class=''>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'><link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+ 
+  <title>Aktu Helper Home Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <meta name="theme-color" content="#fff">
+  <!-- Favicons -->
+  <link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="maskable_icon_x192.png">
+  <link href="Birthday-removebg-preview.png" rel="icon">
+  <script src="https://smtpjs.com/v3/smtp.js"></script> 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Caveat:wght@700&family=Courgette&family=Fira+Sans+Condensed:wght@500&family=Inter&family=Josefin+Sans:wght@500&family=Kalam:wght@700&family=Mali&family=Russo+One&family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/ryanparag/pen/oWrLPr?depth=everything&order=popularity&page=5&q=card+list&show_forks=false" />
+ 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2119897152920774"
+    crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="trial.css" rel="stylesheet">
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DLZBBC066X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DLZBBC066X');
+</script>
+  <style class="cp-pen-styles">
+ #movie-card-list{
+  
+  font-family: 'Kanit', sans-serif;
+      font-size: 14px;
+      color: white;
+      line-height: 1.5;
+      font-weight: 400;
+      max-width: 100%;
+      overflow-x: hidden;
+   }
+    
+   #movie-card-list{
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    .movie-card {
+      background-image: url("DR\ TECH.jpg");
+      background-size: contain;
+      background-position: -40% 80%;
+      background-repeat: no-repeat;
+      width: 75%;
+      max-width: 800px;
+      height: 300px;
+      display: block;
+      margin: 8vh auto;
+      border-radius: 8px;
+      -webkit-box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+              box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    .movie-card:nth-child(2) {
+      background-image: url("Daily\ News\ Feed\ \(1\).png");
+      background-position: -20% 80%;
+    }
+    
+    .movie-card:nth-child(3) {
+      background-image: url("http://www.dvdactive.com/images/reviews/screenshot/2011/5/akirabdcap8_original.jpg");
+      background-position: -20% 80%;
+    }
+    
+    .color-overlay {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(42, 159, 255, 0.2)), color-stop(60%, #212120), to(#212120));
+      background: linear-gradient(to right, rgba(42, 159, 255, 0.2) 0%, #212120 60%, #212120 100%);
+     
+    }
+    
+ 
+    .heading{
+        color:#212120;
+        font-size:50px;
+        margin-left:530px;
+        font-weight: bolder;
+    }
+    
+    .movie-content {
+      width: 40%;
+      display: block;
+      position: relative;
+      float: right;
+      padding-right: 1em;
+    }
+    .movie-content .movie-title {
+      color: #ffffff;
+      margin-bottom: .25em;
+      opacity: .75;
+    }
+    .movie-content .movie-info {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .8em;
+      color: yellow;
+      line-height: 1;
+      margin: 0;
+      font-weight: 700;
+      opacity: .5;
+    }
+    .movie-content .movie-header {
+      margin-bottom: 2em;
+    }
+    .movie-content .movie-desc {
+      font-weight: 300;
+      opacity: .84;
+      margin-bottom: 2em;
+    }
+    @media only screen and (max-width:435px){
+    #hera{
+      position: relative;
+      right:400px;
+    }
+  }
+    @media only screen and (max-width:415px){
+    #hera{
+      position: relative;
+      right:400px;
+    }
+  }
+    @media only screen and (max-width:395px){
+    #hera{
+      position: relative;
+      right:400px;
+    }
+  }
+    .btn {
+      padding: .8em 2em;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+    
+    .btn-outline {
+      background-color: transparent;
+      border: 3px solid #ffffff;
+    }
+    
+    .btn::before {
+      font-family: 'Material Icons';
+      content: '\e037';
+      vertical-align: middle;
+      font-size: 1.5em;
+      padding-right: .5em;
+    }
+    
+    .btn-outline:hover {
+      border-color: #2a9fff;
+      color: #2a9fff;
+      -webkit-box-shadow: 0px 1px 8px 0px rgba(245, 199, 0, 0.2);
+              box-shadow: 0px 1px 8px 0px rgba(245, 199, 0, 0.2);
+    }
+    
+    .movie-share {
+      padding: 1em;
+      display: inline-block;
+      width: 15%;
+    }
+    
+    .movie-share__icon i {
+      font-size: 1.2em;
+      margin-left: .5em;
+      color: #ffffff;
+      mix-blend-mode: lighten;
+      opacity: .4;
+    }
+    
+    .movie-share__icon i:hover {
+      opacity: 1;
+      mix-blend-mode: lighten;
+    }
+    
+    @media (max-width: 1000px) {
+      .movie-content {
+        width: 50%;
+        max-width: 95%;
+      }
+    }
+    @media (max-width: 800px) {
+      .movie-card {
+        width: 95%;
+        max-width: 95%;
+      }
+    }
+    @media (max-width: 600px) {
+      .movie-card, .movie-card:nth-child(2), .movie-card:nth-child(3) {
+        background-position: 50% 0%;
+        background-size: cover;
+        height: 400px;
+      }
+    
+      
+    
+      .movie-content {
+        margin-top: 4.2em;
+        width: 90%;
+      }
+    
+      .movie-share {
+        display: block;
+        width: 100%;
+      }
+    }
+  
+    </style>
+     
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2119897152920774"
+     crossorigin="anonymous"></script> 
+    
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>Aktuhelper</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+      <!---- <a href="index.html"><img src="Birthday-removebg-preview.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Syllabus</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="first_yr_sullabus.html">First Year (common)</a></li>
+              <li class="dropdown"><a href="#"><span>Computer Science</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="second_yr_syllabus.html">Second Year</a></li>
+                  <li><a href="third_yr_syllabus.html">Third Year</a></li>
+                  <li><a href="fourth_yr_syllabus.html">Fourth Year</a></li>
+                </ul>
+                <li class="dropdown"><a href="#"><span>Electrical</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="B.Tech_2nd_Yr_EE_&_Allied.html">Second Year</a></li>
+                    <li><a href="electrical_3rd_yr_syllabus.html">Third Year</a></li>
+                    <li><a href="electrical_4th_yr_syllabbus.html">Fourth Year</a></li>
+                  </ul>
+                  <li class="dropdown"><a href="#"><span>Mechanical</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="">Second Year</a></li>
+                      <li><a href="#">Third Year</a></li>
+                      <li><a href="#">Fourth Year</a></li>
+                    </ul>
+                    <li class="dropdown"><a href="#"><span>Civil</span> <i class="bi bi-chevron-right"></i></a>
+                      <ul>
+                        <li><a href="">Second Year</a></li>
+                        <li><a href="#">Third Year</a></li>
+                        <li><a href="#">Fourth Year</a></li>
+                      </ul>
+               <!----<ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>-->
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>PYQ</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="select1.html">First Year (common)</a></li>
+              <li class="dropdown"><a href="#"><span>Computer Science</span> <i class="bi bi-chevron-right"></i></a>
+      
+                <ul>
+                  <li><a href="second year homee.html">Second Year</a></li>
+                  <li><a href="third_yr_home.html">Third Year</a></li>
+                  <li><a href="fourth_yr_home.html">Fourth Year</a></li>
+                </ul>
+               
+               <!----<ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>-->
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Quantum Books</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="quantum_first_yr.html">First Year (common)</a></li>
+              <li class="dropdown"><a href="#"><span>Computer Science</span> <i class="bi bi-chevron-right"></i></a>
+      
+                <ul>
+                  <li><a href="quantum_second_yr.html">Second Year</a></li>
+                  <li><a href="quantum_third_yr.html">Third Year</a></li>
+                  <li><a href="quantum_fourth_yr.html">Fourth Year</a></li>
+                </ul>
+                <li class="dropdown"><a href="#"><span>Electrical</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="electrical_quantum_secondyr.html">Second Year</a></li>
+                    <li><a href="electrical_quantum_thirdyr.html">Third Year</a></li>
+            
+                  </ul>
+                  <li class="dropdown"><a href="#"><span>Mechanical</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="mechanical_second_yr_quantum.html">Second Year</a></li>
+                      <li><a href="mechanical_third_yr_quantum.html">Third Year</a></li>
+                     
+                    </ul>
+                    <li class="dropdown"><a href="#"><span>Civil</span> <i class="bi bi-chevron-right"></i></a>
+                      <ul>
+                        <li><a href="civil_second_yr_quantum.html">Second Year</a></li>
+                        <li><a href="civil_third_yr_quantum.html">Third Year</a></li>
+                     
+                      </ul>
+               <!----<ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>-->
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="placement.html" target="_blank">Placement</a></li>
+          <li><a class="nav-link scrollto" href="exam_home.html">Govt Jobs</a></li>
+          <li><a class="nav-link scrollto" href="re.html" target="_blank">Aktu Result</a></li>
+          <li><a class="nav-link scrollto" href="contact1.html">Contact</a></li>
+          <li><a class="nav-link scrollto" href="about1.html">About us</a></li>
+     </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar --></div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>
+            Welcome to Aktu Helper!
+          </h1>
+          <h2>
+            Hope of Every Engineering Students!
+          </h2>
+          <div>
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="Birthday-removebg-preview.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+            <img src="assets/img/about-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
+          </div>
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <h3 data-aos="fade-up">ABOUT US</h3>
+            <p data-aos="fade-up" data-aos-delay="100">
+             Aktu Helper is a Website for all the Computer Science and Engineering Students. Here we provide them Free Study Materials which Help them to Score Good Marks in Semester Exams.
+            </p>
+            <div class="row">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-receipt"></i>
+                <h4>Our Aim</h4>
+                <p>Our Aim is to Help Engineering Students by Providing Free Study Materials</p>
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-cube-alt"></i>
+                <h4>Our Mission</h4>
+                <p>Our Mission is to Provide Best and Accurate Study Materials to Engineering Students So they can Score Higher in Semester Exams.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Check out the Great Services we offer</p>
+        </div>
+
+      <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="syllabus.html" target="_blank">Aktu Syllabus</a></h4>
+              <p class="description">We Provide Latest and Updated Aktu Syllabus For All Years.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="pyq.html">PYQ</a></h4>
+              <p class="description">We Provide Latest and Updated Aktu Previous Year Question Papers For All Years.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="placement.html">Placement Section </a></h4>
+              <p class="description">Get all the Placement related content in aktuhelper</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="exam_home.html">Government Job Section </a></h4>
+              <p class="description">Get all the information and study materials about Govt Exams</p>
+            </div>
+          </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="quan.html">Quantum Books</a></h4>
+              <p class="description">We Provide Quantum Books for All Years. Download it From Here</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="up slcp.html">UP Schloarship</a></h4>
+              <p class="description">Check out Details of UP Schloarsip From Here</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    
+    <!-- ======= Team Section ======= 
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Team</h2>
+          <p>Our team is always here to help</p>
+        </div>
+
+       <div class="row">
+
+          
+
+          
+
+          <div class="col-xl-3 col-lg-4 col-md-7" data-aos="zoom-in" data-aos-delay="300">
+            <div class="member">
+              <img src="adityanews.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Aditya Singh</h4>
+                  <span>Founder & Designer</span>
+                </div>
+                <div class="social">
+                  <a href="https://twitter.com/singhaditya5096"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100026915010350"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/singhaditya5096/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.youtube.com/channel/UC-uXzXf1o1Mc5l-fBLe7Z5g"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="member">
+              <img src="aditya2 (2)new.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Aditya Raj Gupta</h4>
+                  <span>Founder & Content Manager</span>
+                </div>
+                <div class="social">
+                
+                  <a href="https://www.facebook.com/profile.php?id=100008372796478" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/its_anurag_3232/" target="_blank"><i class="bi bi-instagram"></i></a>
+               
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+    <h1 id="hera">
+     Our Channel
+    </h1>
+<div id="movie-card-list">
+
+  
+<div class="movie-card"  data-aos="zoom-in" >
+  
+  <div class="color-overlay">
+    <div class="movie-share">
+        <a class="movie-share__icon" href="https://youtube.com/@DrTECH404?feature=shared" target="_blank">
+          <i class="material-icons">&#xe87d</i>
+        </a>
+        <a class="movie-share__icon" href="https://youtube.com/@DrTECH404?feature=shared">
+          <i class="material-icons">&#xe253</i>
+        </a>
+        <a class="movie-share__icon" href="https://youtube.com/@DrTECH404?feature=shared">
+          <i class="material-icons">&#xe80d</i>
+        </a>
+      </div>
+    <div class="movie-content">
+      <div class="movie-header">
+        <h1 class="movie-title">Dr Tech 404</h1>
+        <h2 class="movie-info">@DrTECH404</h2>
+      </div>
+      <p class="movie-desc">Welcome to Dr. TECH 404 You Tube channel! We are your one stop destination for expanding your tech knowledge.</p>
+      <a class="btn btn-outline" href="https://youtube.com/@DrTECH404?feature=shared">Check out</a>
+
+    </div>
+  </div>
+</div>
+
+<div class="movie-card" data-aos="fade-up" data-aos-delay="200">
+  <div class="color-overlay">
+      <div class="movie-share">
+              <a class="movie-share__icon" href="https://www.youtube.com/@ghostgamers2001" target="_blank">
+                  <i class="material-icons">&#xe87d</i>
+              </a>
+              <a class="movie-share__icon" href="https://www.youtube.com/@ghostgamers2001">
+                  <i class="material-icons">&#xe253</i>
+              </a>
+              <a class="movie-share__icon" href="https://www.youtube.com/@ghostgamers2001">
+                  <i class="material-icons">&#xe80d</i>
+              </a>
+          </div>
+      <div class="movie-content">
+          <div class="movie-header">
+              <h1 class="movie-title">Ghost Gamers</h1>
+              <h2 class="movie-info">@ghostgamers2001</h2>
+          </div>
+          <p class="movie-desc">Presenting GHOST GAMER a dedicated channel for ultimate gaming...</p>
+          <a class="btn btn-outline" href="https://www.youtube.com/@ghostgamers2001">Check out</a>
+
+      </div>
+  </div>
+</div>
+<!----
+<div class="movie-card">
+  <div class="color-overlay">
+    <div class="movie-share">
+        <a class="movie-share__icon" href="#">
+          <i class="material-icons">&#xe87d</i>
+        </a>
+        <a class="movie-share__icon" href="#">
+          <i class="material-icons">&#xe253</i>
+        </a>
+        <a class="movie-share__icon" href="#">
+          <i class="material-icons">&#xe80d</i>
+        </a>
+      </div>
+    <div class="movie-content">
+      <div class="movie-header">
+        <h1 class="movie-title">Back to the Future</h1>
+        <h4 class="movie-info">(1985) Adventure, Comedy, Sci-Fi</h4>
+      </div>
+      <p class="movie-desc">Marty McFly, a 17-year-old high school student, is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown. </p>
+      <a class="btn btn-outline" href="#">Watch Trailer</a>
+
+    </div>
+  </div>
+</div>
+
+</div>
+    
+
+    <!-- ======= Contact Us Section ======= 
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p>Contact us the get started</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="info">
+              
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>aktuhelper@gmail.com</p>
+              </div>
+              
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30688417.89504741!2d64.41490197220115!3d20.128007356841444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1672963328417!5m2!1sen!2sin" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://formspree.io/f/mqkokbwd" method="POST" class="phpe-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name" name="Name">Your Name</label>
+                  <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name" name="Email">Your Email</label>
+                  <input type="email"  name="Email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name" name="Subject">Subject</label>
+                <input type="text" name="Subject" class="form-control" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name" name="message">Message</label>
+                <textarea class="form-control" name="Message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+              
+           
+                
+              </div>
+              <div class="text-center"><button type="Submit" value="Submit">Submit</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+   
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Aktu Helper</h3>
+      
+              <strong>Email:</strong> aktuhelper@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about1.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact1.html">Contact us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="terms.html">Terms & Conditions</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="privacy policy.html">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="syllabus.html">Aktu Syllabus</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="pyq.html"> Previous Years Question Paper</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="exam_home.html">Government Job</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="quan.html">Quantum Books</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="placement.html">Placement</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="up slcp.html">UP Schloarship</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Follow Us on</p>
+            <div class="social-links mt-3">
+              <a href="https://twitter.com/AktuHelper" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100087970011645" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/aktuhelper/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://mail.google.com" target="_blank" class="gmail"><i class="bx bxl-gmail"></i></a>
+              <a href="https://www.linkedin.com/in/aktu-helper-official-aktuhelper-5b4631258" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright 2024 <strong><span>Aktu Helper</span></strong> All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ -->
+        Designed by <a href="">Aditya Singh</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "Mbby1Uo98Oq--rvjDTKm-",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="Mbby1Uo98Oq--rvjDTKm-"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+ <script src="java.js"></script>
+
+</body>
+</html>

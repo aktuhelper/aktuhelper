@@ -1,0 +1,1009 @@
+body{
+    max-width:100%;
+    height:100%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    overflow-x:hidden;
+    font-color:black;
+}
+.menu-bar{
+  
+    background: #252324;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    font-weight: bolder;
+}
+footer{
+    position:absolute;
+    right:0;
+    left:0px;
+    bottom:0;
+}
+.menu-bar ul{
+display: inline-flex;
+list-style: none;
+color:white;
+}
+.menu-bar ul li{
+    width:120px;
+    margin:15px;
+    padding:15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+.active, .menu-bar ul li:hover{
+    background: dodgerblue ;
+    border-radius: 3px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #252324;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li :last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: aqua;
+}
+.fa fa-angle-right{
+    float:right;
+}
+.sub-menu-2{
+    display: none;
+
+}
+.hover-me:hover .sub-menu-2{
+position: absolute;
+display: block;
+margin-top: -40px;
+margin-left: 140px;
+background:#252324;
+}
+.sub-menu-3{
+    display: none;
+}
+.hover-me-2:hover .sub-menu-3{
+    position: absolute;
+display: block;
+margin-top: -40px;
+margin-left: 140px;
+background: #252324;
+}
+.sub-menu-4{
+    display: none;
+}
+.hover-me-3:hover .sub-menu-4{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background:#252324 ;
+
+}
+
+   .logo img{
+       position: absolute;
+       margin-top: -7px;
+       margin-left: 5px;
+       margin-bottom: 20px;
+       z-index: 100;
+   }
+   .aktu_image{
+    margin:40px;
+    position:relative;
+    top:50px;
+   }
+   .theory{
+    position:relative;
+    margin: 50px;
+     text-align:center;
+      top:-190px;
+      right:10px;
+      font-family: 'Mali', cursive;
+      font-size:37px;
+      font-weight:900;
+      color:black;
+   }
+   .theory h4{
+    color:black;
+    font-size:35px;
+    font-weight: bold;
+   }
+   .content{
+    position: relative;
+    margin:-35px;
+    font-size:20px;
+    left:80px;
+    font-style: italic;
+   }
+   .selec{
+   
+    font-family: 'Russo One', sans-serif;
+    position:relative;
+           top:-120px;
+           left:35px;
+       text-decoration: none;
+       text-align: center;
+color:black;
+   }
+  .card__description .btn{
+  }
+  .btn1 a{
+    position: relative;
+    font-family: 'Russo One', sans-serif;
+    
+    font-weight: bold;
+    background: darkblue;
+    width:160px;
+    color:white;
+    border-radius: 10px;
+  font-size: 35px;
+  left:550px;
+      top:-50px;
+    text-decoration: none;
+    text-align: center;
+  }
+.pyq  ul{
+    position: absolute;
+    
+    left:50%;
+    padding:0;
+    margin: 0;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.pyq  ul li{
+    list-style: none;
+    margin: 0 65px;
+
+}
+.pyq  ul li .fa{
+    font-size: 100px;
+    line-height: 60px;
+    transition: .6s;
+    color: red;
+}
+.pyq ul li .fa:hover{
+color: red;
+}
+.pyq  ul li a{
+    position: relative;
+    display: block;
+    width: 200px;
+    height:60px;
+    font-size:120px;
+    text-decoration:none;
+    text-align: center;
+    transition: .6s;
+    color:green;
+}
+.pyq ul li a:hover{
+    transform: translate(0,-10px);
+    color:darkblue;
+    box-shadow: red;
+}
+ .pyq span{
+
+    position: relative;
+    font-size: 20px;
+    top:-90px;
+    color:black;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+}
+.btn3 a{
+    position: relative;
+    font-family: 'Russo One', sans-serif;
+    
+    font-weight: bold;
+    background: darkblue;
+    width:160px;
+    color:white;
+    border-radius: 10px;
+  font-size: 35px;
+  left:550px;
+      top:100px;
+    text-decoration: none;
+    text-align: center;
+  }
+.pyq_2 ul{
+    position: absolute;
+    top:1200px;
+    left:50%;
+    padding:0;
+    margin: 0;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.pyq_2 ul li{
+    list-style: none;
+    margin: 0 65px;
+}
+.pyq_2  ul li .fa{
+    font-size: 100px;
+    line-height: 60px;
+    transition: .6s;
+    color: red;
+}
+.pyq_2  ul li .fa:hover{
+    transform: translate(0,-10px);
+    color:darkblue;
+    box-shadow: red;
+}
+.pyq_2  ul li a{
+    position: relative;
+    display: block;
+    width: 200px;
+    height:60px;
+    font-size:120px;
+    text-decoration:none;
+    text-align: center;
+    transition: .6s;
+    color:green;
+}
+.pyq_2 span{
+
+    position: relative;
+    font-size: 17px;
+    top:-90px;
+    color:black;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+}
+.pyq_2 ul li a:hover{
+    transform: translate(0,-10px);
+    color:darkblue;
+    box-shadow: red;
+}
+.pyq_3 ul{
+    position: absolute;
+    top:900px;
+    left:50%;
+    padding:0;
+    margin: 0;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.pyq_3 ul li{
+    list-style: none;
+    margin: 0 65px;
+}
+.pyq_3  ul li .fa{
+    font-size: 100px;
+    line-height: 60px;
+    transition: .6s;
+    color: red;
+}
+.pyq_3  ul li .fa:hover{
+    transform: translate(0,-10px);
+    color:darkblue;
+    box-shadow: red;
+}
+.pyq_3  ul li a{
+    position: relative;
+    display: block;
+    width: 200px;
+    height:60px;
+    font-size:120px;
+    text-decoration:none;
+    text-align: center;
+    transition: .6s;
+    color:green;
+}
+.pyq_3 span{
+
+    position: relative;
+    font-size: 20px;
+    top:-90px;
+    color:black;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+}
+.pyq_3 span
+    ul li a:hover{
+    transform: translate(0,-10px);
+    color:darkblue;
+    box-shadow: red;
+}
+.n ul{
+    position: absolute;
+    top:880px;
+    left:50%;
+    padding:0;
+    margin: 0;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.n ul li{
+    list-style: none;
+    margin: 0 65px;
+}
+.n  ul li .fa{
+    font-size: 100px;
+    line-height: 60px;
+    transition: .6s;
+    color: red;
+}
+.n  ul li .fa:hover{
+    transform: translate(0,-10px);
+    color:darkblue;
+    box-shadow: red;
+}
+.n  ul li a{
+    position: relative;
+    display: block;
+    width: 200px;
+    height:60px;
+    font-size:120px;
+    text-decoration:none;
+    text-align: center;
+    transition: .6s;
+    color:green;
+}
+.n span{
+
+    position: relative;
+    font-size: 17px;
+    top:-90px;
+    color:black;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+}
+.n ul li a:hover{
+    transform: translate(0,-10px);
+    color:darkblue;
+    box-shadow: red;
+}
+.m ul{
+    position: absolute;
+    top:1450px;
+    left:50%;
+    padding:0;
+    margin: 0;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.m ul li{
+    list-style: none;
+    margin: 0 65px;
+}
+.aktu_image  ul li .fa{
+    font-size: 100px;
+    line-height: 60px;
+    transition: .6s;
+    color: red;
+}
+.m  ul li .fa:hover{
+    transform: translate(0,-10px);
+    color:darkblue;
+    box-shadow: red;
+}
+.m  ul li a{
+    position: relative;
+    display: block;
+    width: 200px;
+    height:60px;
+    font-size:120px;
+    text-decoration:none;
+    text-align: center;
+    transition: .6s;
+    color:green;
+}
+.m span{
+
+    position: relative;
+    font-size: 17px;
+    top:-90px;
+    color:black;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+}
+.m ul li a:hover{
+    transform: translate(0,-10px);
+    color:darkblue;
+    box-shadow: red;
+}
+
+footer{
+    position: relative;
+    bottom: -200px;
+    left: -8px;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 150vw;
+    font-family: "'Kanit', sans-serif";
+    padding-top: 40px;
+    color: #fff;
+
+}
+.footer-content{
+    position: relative;
+    top: -200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-right:600px;
+    font-family: 'Inter', sans-serif;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight:bolder;
+    text-transform: capitalize;
+    line-height: 3rem;
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 35px;
+    font-weight: bold;
+  
+}
+.socials{
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    padding-left: 6px;
+    size: 20px;
+    letter-spacing: 30px;
+    top: 30px;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 40px;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: red;
+}
+
+.footer-bottom{
+    width:100%;
+    background: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+ .av p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-bottom p{
+    position: relative;
+    left:-285px;
+}
+.foot{
+    position:relative;
+    padding-left: 100px;
+    top:40px;
+}    
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+
+.ham{
+width:100%;
+position: absolute;
+
+left:50%;
+transform: translate(-50%, -50%);
+background: #1b1b1b;
+
+line-height: 40px;
+padding: 8px 25px;
+border-radius: 5px;
+}
+.ham label{
+color: white;
+font-size: 22px;
+font-weight: 500;
+display: block;
+cursor: pointer;
+}
+.button span{
+float: right;
+line-height: 40px;
+transition: 0.5s;
+}
+.button span.rotate{
+transform: rotate(-180deg);
+}
+.ham ul{
+position: absolute;
+background: #1b1b1b;
+list-style: none;
+top: 75px;
+left: 0;
+width: 100%;
+border-radius: 5px;
+display: none;
+}
+[id^=btn]:checked + ul{
+display: block;
+}
+.ham .menu:before{
+position: absolute;
+content: '';
+height: 20px;
+width: 20px;
+background: #1b1b1b;
+right: 20px;
+top: -10px;
+transform: rotate(45deg);
+z-index: -1;
+}
+.ham ul li{
+line-height: 40px;
+padding: 8px 20px;
+cursor: pointer;
+border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.ham ul li label{
+font-size: 18px;
+}
+.ham ul li a{
+color: white;
+text-decoration: none;
+font-size: 18px;
+display: block;
+}
+.ham ul li a:hover,
+.ham ul li label:hover{
+color: cyan;
+}
+.ham ul ul{
+position: static;
+}
+.ham ul ul li{
+line-height: 30px;
+padding-left: 30px;
+border-bottom: none;
+}
+.ham ul ul li a{
+color: #e6e6e6;
+font-size: 17px;
+}
+.ham ul li span{
+font-size: 20px;
+float: right;
+margin-top: 10px;
+padding: 0 10px;
+transition: 0.5s;
+}
+.ham ul li span.rotate{
+transform: rotate(-180deg);
+}
+input{
+display: none;
+}
+.button span{
+position:relative;
+right:20px;
+}
+.ham{
+display: none;
+
+}
+@media only screen and (max-width:415px){
+    body{
+        overflow-x:hidden;
+        max-width:100%;
+        margin:0;
+        padding:0;
+    }
+    .menu-bar{
+        display:none;
+
+    }
+    .ham{
+        position:absolute;
+        display:block;
+        z-index:99;
+       width:100%;
+     top:28px;
+
+    }
+    .logo img{
+        position: relative;
+        left:-15px;
+    }
+    .footer-content p{
+        display: none;  
+    }
+    .footer-content h3{
+        position: relative;
+        right:-135px;
+        padding:10px;
+        line-height: 50px;
+    }
+    .foot img{
+        position: relative;
+        top:130px;
+        width:180px;
+        left:15px;
+    }
+    .socials li{
+        position: relative;
+        left:200px;
+        top:150px;
+        letter-spacing: 5px;
+    }
+    footer{
+       
+       top:320%;
+    }
+   .footer-bottom{
+    max-width:100%;
+   }
+    .footer-bottom p{
+        position: relative;
+     left:-85px;
+       font-size: 10px;
+       text-align: center;
+
+      }
+      .aktu_image img{
+        position: relative;
+        top:-100px;
+        left:87px;
+      }
+      .content p{
+        display:none;
+      }
+    .btn1{
+        position: relative;
+        right:455px;
+    }
+    .btn3{
+        position: relative;
+        right:455px;
+        top:895px;
+    }
+    .pyq ul {
+        flex-direction: column;
+     
+    }
+    .pyq ul li{
+        position: relative;
+        top:150px;
+      margin-top: 150px;
+    }
+  
+    
+    .n ul li{
+        flex-direction: column;
+       top:850px;
+   
+    }
+    
+    
+    .pyq_2 ul{
+        flex-direction: column;
+        
+    }
+    .pyq_2 ul li{
+        margin-top:150px;
+        position: relative;
+        top:1320px;
+    }
+    .m ul{
+        flex-direction: column;
+      
+    }
+    .m ul li{
+     margin-top:150px;
+     position: relative;
+     top:1700px;
+    }
+    .theory h4{
+        position:relative;
+        top:100px;
+        text-align: center;
+        left:8px;
+    }
+    .selec h1{
+        position: relative;
+        padding:10px;
+        line-height: 60px;
+        right:36px;
+    }
+}
+@media only screen and (max-width:395px){
+
+    body{
+        overflow-x:hidden;
+        max-width:100%;
+    }
+    .menu-bar{
+        display:none;
+
+    }
+    .ham{
+        position:absolute;
+        display:block;
+        z-index:99;
+       width:100%;
+     top:28px;
+    }
+    .logo img{
+        position: relative;
+        left:-15px;
+        top:-5px;
+    }
+    .footer-content p{
+        display: none;  
+    }
+    .footer-content h3{
+        position: relative;
+        right:-125px;
+        padding:10px;
+        line-height: 50px;
+    }
+    .foot img{
+        position: relative;
+        top:130px;
+        width:180px;
+        left:10px;
+    }
+    .socials li{
+        position: relative;
+        left:200px;
+        top:150px;
+        letter-spacing: 5px;
+    }
+    footer{
+    position: relative;
+       top:280%;
+    }
+   .footer-bottom{
+    max-width:100%;
+   }
+    .footer-bottom p{
+        position: relative;
+     left:-85px;
+       font-size: 10px;
+       text-align: center;
+
+      }
+      .aktu_image img{
+        position: relative;
+        top:-100px;
+        left:75px;
+      }
+      .content p{
+        display:none;
+      }
+    .btn1{
+        position: relative;
+        right:465px;
+    }
+    .btn3{
+        position: relative;
+        right:455px;
+        top:895px;
+    }
+    .pyq ul li {
+        display: block;
+        flex-direction: column;
+       margin-top: 130px;
+    }
+
+  
+    
+    .n ul li {
+        display:block;
+        position: relative;
+        flex-direction: column;
+       }
+   
+
+    .pyq_2 ul{
+        flex-direction: column;
+  
+        top: ;   
+     }
+    .pyq_2 ul li{
+        margin-top:150px;
+      
+    }
+    .m ul{
+        flex-direction: column;
+      display:none;
+      top:
+    }
+    .m ul li{
+     margin-top:150px;
+ 
+    }
+    .theory h4{
+        position:relative;
+        top:100px;
+        text-align: center;
+        left:8px;
+    }
+    .selec h1{
+        position: relative;
+        padding:10px;
+        line-height: 60px;
+        right:36px;
+    }
+    
+
+    }
+   @media only screen and (max-width:365px){
+        body{
+            max-width:100%;
+            overflow-x:hidden;
+        }
+        .menu-bar{
+            display:none;
+    
+        }
+        .ham{
+            position:absolute;
+            display:block;
+            z-index:99;
+           width:100%;
+         top:28px;
+        }
+        .logo img{
+            position: relative;
+            left:-15px;
+        }
+        .footer-content p{
+            display: none;  
+        }
+        .footer-content h3{
+            position: relative;
+            right:-110px;
+            padding:10px;
+            line-height: 50px;
+        }
+        .foot img{
+            position: relative;
+            top:130px;
+            width:180px;
+            left:-6px;
+        }
+        .socials li{
+            position: relative;
+            left:185px;
+            top:150px;
+            letter-spacing: 5px;
+        }
+        footer{
+           top:360%;
+           display:none;
+        }
+       .footer-bottom{
+        max-width:100%;
+       }
+        .footer-bottom p{
+            position: relative;
+         left:-85px;
+           font-size: 10px;
+           text-align: center;
+    
+          }
+          .aktu_image img{
+            position: relative;
+            top:-100px;
+            left:66px;
+          }
+          .content p{
+            display:none;
+          }
+        .btn1{
+            position: relative;
+            right:480px;
+        }
+        .btn3{
+            position: relative;
+            right:480px;
+            top:850px;
+        }
+        .pyq ul {
+            flex-direction: column;
+      
+        }
+        .pyq ul {
+            position: relative;
+            top:150px;
+          margin-top: 150px;
+          z-index:999;
+        
+        }
+      
+        
+        .n ul{
+            flex-direction: column;
+       
+        }
+        .n ul li{
+            position: relative;
+            top: 850px;
+        }
+        .pyq_2 ul{
+            flex-direction: column;
+            
+        }
+        .pyq_2 ul li {
+            margin-top:150px;
+            position: relative;
+            top:1320px;
+        }
+        .m ul{
+            flex-direction: column;
+          
+        }
+        .m ul li{
+         margin-top:150px;
+         position: relative;
+         top:1700px;
+        }
+        .theory h4{
+            position:relative;
+            top:100px;
+            text-align: center;
+            left:12px;
+        }
+        .selec h1{
+            position: relative;
+            padding:10px;
+            line-height: 60px;
+            right:36px;
+        }
+        }

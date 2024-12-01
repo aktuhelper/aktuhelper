@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Year CSE  Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- Favicons -->
+  <link href="Birthday-removebg-preview-ico.ico" rel="icon">
+ 
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link rel="stylesheet" href="project.css">
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="second yr 2018-19yr.css">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2119897152920774"
+  crossorigin="anonymous"></script>
+  <script>
+    "use strict";
+    
+    !function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n = Array.prototype.slice.call(arguments);
+            return n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+          var i = document.getElementsByTagName("script")[0];
+          i.parentNode.insertBefore(o, i);
+        };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('9dti49b5gim2');
+    </script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DLZBBC066X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DLZBBC066X');
+</script>
+    <style>
+        body {
+            background:#110f16;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Custom CSS for card styling */
+        .custom-card {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color:#110f16;
+    overflow: hidden; /* Ensure shadow doesn't get clipped */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 12px 12px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.2); /* Darker semi-transparent white on hover */
+}
+
+
+        .custom-card .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .custom-card .card-text {
+            color: #fff;
+            flex-grow: 1; /* Grow to fill available space */
+            font-size: medium;
+        }
+
+        .custom-card .btn {
+            background-color: #32c788;
+            border-color: #32c788;
+            align-self: flex-end; /* Align button to the end of the flex container */
+        }
+
+        .custom-card .btn:hover {
+            background-color: orange;
+            border-color: orange;
+        }
+
+        /* Transition for answer */
+        .card-answer {
+            transition: opacity 0.3s ease;
+            opacity: 0;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .card-answer.show {
+            opacity: 1;
+        }
+
+        /* Custom shadow effect */
+        .custom-card {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .custom-card:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 12px 12px rgba(0, 0, 0, 0.3);
+        }
+        .badge{
+            font-size:medium;
+        }
+         /* Animation for hero section image */
+         .img-fluid {
+            animation: floatAnimation 1.5s infinite alternate ease-in-out;
+        }
+
+        @keyframes floatAnimation {
+            0% {
+                transform: translateY(-5px);
+            }
+            100% {
+                transform: translateY(5px);
+            }
+        }
+    </style>
+</head>
+<body>
+     
+ <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo">
+      <h1 class="text-light"><a href="index.html"><span>Aktuhelper</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+    <!---- <a href="index.html"><img src="Birthday-removebg-preview.png" alt="" class="img-fluid"></a>-->
+    </div>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+        <li class="dropdown"><a href="#"><span>Syllabus</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="first_yr_sullabus.html">First Year (common)</a></li>
+            <li class="dropdown"><a href="#"><span>Computer Science</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="second_yr_syllabus.html">Second Year</a></li>
+                <li><a href="third_yr_syllabus.html">Third Year</a></li>
+                <li><a href="fourth_yr_syllabus.html">Fourth Year</a></li>
+              </ul>
+              <li class="dropdown"><a href="#"><span>Electrical</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="B.Tech_2nd_Yr_EE_&_Allied.html">Second Year</a></li>
+                  <li><a href="electrical_3rd_yr_syllabus.html">Third Year</a></li>
+                  <li><a href="electrical_4th_yr_syllabbus.html">Fourth Year</a></li>
+                </ul>
+                <li class="dropdown"><a href="#"><span>Mechanical</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="">Second Year</a></li>
+                    <li><a href="#">Third Year</a></li>
+                    <li><a href="#">Fourth Year</a></li>
+                  </ul>
+                  <li class="dropdown"><a href="#"><span>Civil</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="">Second Year</a></li>
+                      <li><a href="#">Third Year</a></li>
+                      <li><a href="#">Fourth Year</a></li>
+                    </ul>
+             <!----<ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>-->
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#"><span>PYQ</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="select1.html">First Year (common)</a></li>
+            <li class="dropdown"><a href="#"><span>Computer Science</span> <i class="bi bi-chevron-right"></i></a>
+    
+              <ul>
+                <li><a href="second year homee.html">Second Year</a></li>
+                <li><a href="third_yr_home.html">Third Year</a></li>
+                <li><a href="fourth_yr_home.html">Fourth Year</a></li>
+              </ul>
+             
+             <!----<ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>-->
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#"><span>Quantum Books</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="quantum_first_yr.html">First Year (common)</a></li>
+            <li class="dropdown"><a href="#"><span>Computer Science</span> <i class="bi bi-chevron-right"></i></a>
+    
+              <ul>
+                <li><a href="quantum_second_yr.html">Second Year</a></li>
+                <li><a href="quantum_third_yr.html">Third Year</a></li>
+                <li><a href="quantum_fourth_yr.html">Fourth Year</a></li>
+              </ul>
+              <li class="dropdown"><a href="#"><span>Electrical</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="electrical_quantum_secondyr.html">Second Year</a></li>
+                  <li><a href="electrical_quantum_thirdyr.html">Third Year</a></li>
+          
+                </ul>
+                <li class="dropdown"><a href="#"><span>Mechanical</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="mechanical_second_yr_quantum.html">Second Year</a></li>
+                    <li><a href="mechanical_third_yr_quantum.html">Third Year</a></li>
+                   
+                  </ul>
+                  <li class="dropdown"><a href="#"><span>Civil</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="civil_second_yr_quantum.html">Second Year</a></li>
+                      <li><a href="civil_third_yr_quantum.html">Third Year</a></li>
+                   
+                    </ul>
+             <!----<ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>-->
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" href="placement.html" target="_blank">Placement</a></li>
+        <li><a class="nav-link scrollto" href="exam_home.html">Govt Jobs</a></li>
+        <li><a class="nav-link scrollto" href="re.html" target="_blank">Aktu Result</a></li>
+        <li><a class="nav-link scrollto" href="contact1.html">Contact</a></li>
+        <li><a class="nav-link scrollto" href="about1.html">About us</a></li>
+   </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar --></div>
+</header><!-- End Header -->
+    <br><br>  <br><br>
+<div class="container py-6">
+	<div class="row flex-lg-row-reverse align-items-center g-5">
+		<div class="col-10 mx-auto col-sm-8 col-lg-6">
+			<img src="img.png" class="d-block mx-lg-auto img-fluid" alt="" loading="lazy">
+		</div>
+		<div class="col-lg-6">
+			<div class="lc-block mb-3">
+				<div editable="rich">
+					<h1 style="color:#fff;font-weight: bolder;">Computer Science Final Year Projects</h1>
+				</div>
+			</div>
+
+			<div class="lc-block mb-3">
+				<div editable="rich">
+					<p style="color:#fff;" class="lead">Aktuhelper is Presenting Top 10 Final Year Projects Ideas with thier Source Code, we have selected some of the best Project Ideas for you for your reference. 
+					</p>
+				</div>
+			</div>
+
+			<div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start"><a class="btn btn-primary px-4 me-md-2" href="#" role="button">Final Year Project</a>
+				<a class="btn btn-outline-secondary px-4" href="index.html" role="button">Aktuhelper</a>
+			</div>
+
+		</div>
+	</div>
+</div><br>
+<!-- Jumbotron -->
+<div class=" jumo p-4 shadow-4 rounded-0">
+  <h2>Why Final Year Project is needed?</h2>
+  <p>
+    A Final Year Project (FYP) is essential as it consolidates theoretical knowledge into practical application, fostering critical skills like problem-solving and project management. It allows students to delve into real-world challenges within their discipline, honing their research abilities and technical expertise. FYPs also serve as a bridge between academia and professional life, showcasing students' capabilities to potential employers or graduate programs. Through independent work and collaboration, students develop confidence, specialized knowledge, and valuable networking opportunities. Ultimately, an FYP is pivotal in preparing students for their future careers by equipping them with the skills and experience necessary for success in their chosen field.
+  </p>
+
+  <hr class="my-4" />
+
+  <p>
+   We have selected Top 10 most Popular Final Year Projects for you with the source code.
+  </p>
+</div>
+<!-- Jumbotron -->
+<!--cards-->
+<section class="dark">
+	<div class="container py-4">
+		<h1 class="h1 text-center" id="pageHeaderTitle">CSE Final Year Projects</h1>
+
+		<article class="postcard dark blue">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="https://img.freepik.com/free-photo/showing-cart-trolley-shopping-online-sign-graphic_53876-133967.jpg?w=740&t=st=1720518469~exp=1720519069~hmac=5c093ecf13968d9aa630e0a53607868e7b63c099af34a35492dce0ae7b57d2f7" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title blue"><a href="#">Ecommerce-website</a></h1>
+				
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">E-commerce means selling products via the Internet, the fastest-growing field in the world. But to sell products online, you need an E-commerce website for a final-year project. You can make this project in different programming languages such as HTML, CSS, JAVASCRIPT and PHP.e website. Make a beautiful ecommerce website and impress your supervisor. After your degree, you can also provide Ecommerce website development services and earn money.</div>
+				<ul class="postcard__tagbox">
+				 	<li class="tag__item"><i class="fas fa-tag mr-2"></i><a href="https://github.com/topics/ecommerce-website" target="_blank">Get source code</a></li>
+					
+				</ul>
+			</div>
+		</article>
+		<article class="postcard dark red">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="https://img.freepik.com/free-vector/medical-booking-app-concept_23-2148572863.jpg?t=st=1720519023~exp=1720522623~hmac=cd8ac7e0a5797add036f5c9f24e3dea6697b079006e80635c8c4cc972205510b&w=740" alt="Image Title" />	
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title red"><a href="#">Hospital Management System</a></h1>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">The life of a person is the most precious thing in the world. A little bit of delay in treatment can lead to death, But if humans manage this all, it can be risky, but machines don’t make mistakes.  A hospital Management System can automate appointment scheduling, medical record administration, and inventory monitoring operations, allowing healthcare providers to focus on what is most important: saving lives and improving results</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i><a href=" https://github.com/kishan0725/Hospital-Management-System" target="_blank">Get Source Code</a></li>
+					
+				</ul>
+			</div>
+		</article>
+		<article class="postcard dark green">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="https://img.freepik.com/premium-photo/businessman-hand-using-mobile-phone-connect-digital-wallet-mobile-banking_1197797-144424.jpg?w=740" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title green"><a href="#"> Banking Management System</a></h1>
+			
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Banking systems are very complex and challenging to manage. Banks play an essential role in the economy. Tracking financial transactions is necessary to maintain the credibility of the bank.  As a final-year project, you can develop a banking management system. You can build programming languages like Java, Python, or C#.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i><a href="https://github.com/ssoad/BankingSystem " target="_blank">	Get Source Code</a></li>
+					
+				</ul>
+			</div>
+		</article>
+		<article class="postcard dark yellow">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="https://img.freepik.com/premium-photo/creative-3d-mobile-app-marketplace-provides-platform-buying-business-model-advertisement_1020495-15749.jpg?w=740" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title yellow"><a href="#">Shopping Mall Management System</a></h1>
+				
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Millions of people visit restaurants, retail stores, and entertainment venues in shopping malls daily. This project will streamline all the processes, from parking to enhancing customer experience. When the audience size became extensive, managing them through traditional methods became hard</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i><a href="https://github.com/jmagdum7/mall-management-system" target="_blank">Get Source Code</a></li>
+				
+				</ul>
+			</div>
+		</article>
+    <article class="postcard dark green">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="https://img.freepik.com/premium-photo/biometric-fingerprint-digital-scan-technology-scanning-identification-digital-security-private-data-access-concept-using-fingerprint-scanner-generative-aix9_28914-4404.jpg?w=826" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title green"><a href="#"> Fingerprint ATM System</a></h1>
+			
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Traditional ATMs use cards and passwords for cash transactions. To improve this experience, you can create a fingerprint ATM system, but be careful. It can be risky. The chances of fraud will also increase in this scenario. But if you can overcome security risks, it will become the best choice for a final-year project/ To develop this, you need to learn Python or C++.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i><a href="https://github.com/BSP-Embed/Finger-Print-Based-ATM-security-system/blob/master/program/main.c" target="_blank"> Get Source Code</a></li>
+					
+				</ul>
+			</div>
+		</article>
+    <article class="postcard dark yellow">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="https://img.freepik.com/premium-photo/gps-navigation-map_163305-216561.jpg?w=740" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title yellow"><a href="#">Vehicle Tracking Application</a></h1>
+			
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Vehicle tracking is essential for businesses that rely on transportation and logistics. In this digital age, almost 70% of business is done through e-commerce. However, for e-commerce, the main issue is delivery. You can develop a vehicle tracking system project and integrate it with any delivery app such as Uber, Zomato, or Swiggy to improve this system. This project will help make the delivery process easy and fast. You can develop this project in Python.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i><a href="https://github.com/parshva45/Vehicle-Monitoring-And-Routing-System" target="_blank">Get Source Code</a></li>
+				
+				</ul>
+			</div>
+		</article>
+    <article class="postcard dark green">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="https://img.freepik.com/free-photo/close-up-baker-bakery-shop_23-2149233716.jpg?t=st=1720770779~exp=1720774379~hmac=dc96a397d610f82001efdb6a51def3f288285b3989a3dafd26b8a28a9c91d933&w=740" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title green"><a href="#"> Canteen Automation System</a></h1>
+		
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Managing canteens in schools, colleges, and universities can be complex due to high demand and limited resources. It isn’t easy to handle these systems through traditional methods. You can help manage canteen tasks by creating a canteen automation system as your final year project. A Canteen Automation System makes the process easier by incorporating online ordering, cashless payments, and inventory management capabilities. This solution boosts efficiency and customer satisfaction by automating repetitive operations and shortening wait times.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i><a href="https://www.sourcecodester.com/php/15688/canteen-management-system-project-source-code-php.html#google_vignette" target="_blank">Get Source Code</a></li>
+				
+				</ul>
+			</div>
+		</article>
+    <article class="postcard dark yellow">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="https://img.freepik.com/free-vector/choice-worker-concept_23-2148627427.jpg?t=st=1720772075~exp=1720775675~hmac=7841514599a0891a81ad913cea188a93473dd533ca6d60677693ffaced7e3e73&w=740" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title yellow"><a href="#">Online Voting System</a></h1>
+			
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Many people have moved to other foreign countries, but they have the right to vote. To vote, they can’t come to their country for one day. Another thing is blunders in traditional voting systems, such as delayed results and corruption, can cause transparency loss. For the final year project, develop an online voting system to save time and maintain transparency. Security is the biggest concern in this project. If you can overcome security risks, it can become an excellent system for democratic countries to use in elections.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i><a href="https://github.com/shah-deep/Online-Voting-System" target="_blank">Get Source Code</a></li>
+				
+				</ul>
+			</div>
+		</article>
+    <article class="postcard dark green">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="https://img.freepik.com/premium-vector/cyber-security-concept-idea-digital-data-protection-safety-modern-technology-virtual-crime-access-information-through-password-fingerprint-illustration_277904-1846.jpg?w=740" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title green"><a href="#">E-Authentication System</a></h1>
+		
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Frauds are increasing in online payments day by day. You can develop an E-authentication system to safeguard your online transactions and sensitive information. An E-authentication system verifies the user through multifactor identification, cryptographic protocol, and biometrics. By enhancing security, you can make your online transactions secure and fraud-free. It can be the best project if your domain is cybersecurity.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i><a href="https://github.com/prasunparate/E-Authentication-using-QR-code-and-OTP" target="_blank">Get Source Code</a></li>
+					
+				</ul>
+			</div>
+		</article>
+    <article class="postcard dark yellow">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="https://img.freepik.com/premium-photo/national-battery-day-february-18-world-battery-concept_144356-9613.jpg?w=740" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title yellow"><a href="#">Android Battery Saver System</a></h1>
+		
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">An Android battery-saver system can be a good choice for the final year project. Mobile phones are essential for the young generation, but low battery timing is still challenging. Intelligent power management algorithms and simple-to-use user interfaces allow users to get the most out of their devices without worrying about battery timing. You can develop a system to manage your mobile apps and programs efficiently and reduce battery consumption</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i> <a href="https://github.com/raphaelcfernandes/Android-Battery-Saver" target="_blank">Get Source Code</a></li>
+				
+				</ul>
+			</div>
+		</article>
+	</div>
+</section>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+   
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Aktu Helper</h3>
+      
+              <strong>Email:</strong> aktuhelper@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about1.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact1.html">Contact us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="terms.html">Terms & Conditions</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="privacy policy.html">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="syllabus.html">Aktu Syllabus</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="pyq.html"> Previous Years Question Paper</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="exam_home.html">Government Job</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="quan.html">Quantum Books</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="placement.html">Placement</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="up slcp.html">UP Schloarship</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Follow Us on</p>
+            <div class="social-links mt-3">
+              <a href="https://twitter.com/AktuHelper" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100087970011645" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/aktuhelper/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://mail.google.com" target="_blank" class="gmail"><i class="bx bxl-gmail"></i></a>
+              <a href="https://www.linkedin.com/in/aktu-helper-official-aktuhelper-5b4631258" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright 2024 <strong><span>Aktu Helper</span></strong> All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ -->
+        Designed by <a href="">Aditya Singh</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  <!-- Vendor JS Files -->
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script></body></html>
