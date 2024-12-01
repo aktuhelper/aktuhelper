@@ -1,0 +1,190 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background: #f8f9fa;
+    padding: 3rem 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background: #e9ecef;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.sidebar h4 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.sidebar ul {
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+h1{
+    font-weight: bolder;
+}
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+.big-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+.card-body {
+    padding: 2rem; /* Add padding inside the big card body */
+}
+.card-title {
+    position: relative; /* Position relative for absolute positioning of the border */
+    padding-bottom: 1rem; /* Add padding below the title */
+}
+.card-title::after {
+    content: ""; /* No text content, just the border */
+    display: block;
+    position: absolute;
+    bottom: 0; /* Position the border at the bottom of the title */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the border */
+    background-color: #007bff; /* Color of the border */
+}
+.small-card {
+    border: 2px solid; /* Border thickness and style */
+    border-radius: 10px; /* Rounded corners for small cards */
+    margin-bottom: 1rem; /* Margin between small cards */
+    padding: 1rem; /* Padding inside small cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+.small-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+.card-subtitle {
+    padding: 0.5rem; /* Padding inside subtitle background */
+    border-radius: 5px; /* Rounded corners for subtitle background */
+    color: #fff; /* White text color */
+    font-weight: bold; /* Make the subtitle text bold */
+    text-align: center; /* Center the text */
+}
+.small-card:nth-child(1) .card-subtitle {
+    background-color: #ff5733; /* Background color for subtitle in the first small card */
+}
+.small-card:nth-child(2) .card-subtitle {
+    background-color: #33c1ff; /* Background color for subtitle in the second small card */
+}
+.small-card:nth-child(3) .card-subtitle {
+    background-color: #28a745; /* Background color for subtitle in the third small card */
+}
+.small-card:nth-child(4) .card-subtitle {
+    background-color: #f39c12; /* Background color for subtitle in the fourth small card */
+}
+
+.table-container {
+    margin: 2rem auto;
+    max-width: 1000px;
+    background-color: hsl(210, 14%, 7%);
+}
+.table-custom {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+ 
+ .table-container.tbody.tr{
+    background-color: hsl(210, 14%, 7%);
+}
+.table-custom thead th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-custom tbody td {
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #665454; /* Add border to separate columns */
+    background-color: hsl(204, 6%, 17%);
+    border-left: 1px solid #7a7373; /* Add border to separate columns */
+    color:#fff;
+}
+.table-custom tbody td:last-child {
+    border-right: none; /* Remove border from the last column */
+}
+.dark{
+    background-color:hsl(210, 14%, 7%); 
+}
+.dark-accordion .accordion-button {
+    background-color: #333; /* Dark background for the button */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+}
+
+.dark-accordion .accordion-button:focus {
+    box-shadow: none; /* Remove box shadow on focus */
+}
+
+.dark-accordion .accordion-item {
+    background-color: #222; /* Dark background for accordion items */
+    border: 1px solid #444; /* Border for better separation */
+}
+
+.dark-accordion .accordion-body {
+    background-color: hsl(210, 14%, 7%) ; /* Dark background for body */
+    color: #ddd; /* Light text color */
+}
+@media only screen and (max-width: 445px) {
+    .tali{
+     margin-left:-15px;
+    }
+  }
+  @media only screen and (max-width: 410px) {
+    .tali{
+     margin-left:-25px;
+    }
+  }
+  @media only screen and (max-width: 395px) {
+    .tali{
+     margin-left:-35px;
+    }
+  }
+  .card {
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 2rem;
+
+}
+
+.card-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+}
