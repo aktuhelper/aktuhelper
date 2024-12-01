@@ -1,0 +1,72 @@
+body {
+  background: linear-gradient(45deg, #323232, #101010);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Custom CSS for card styling 
+.custom-card {
+margin-bottom: 20px;
+border-radius: 15px;
+background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+overflow: hidden; /* Ensure shadow doesn't get clipped 
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
+transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+*/
+.custom-card:hover {
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 12px 12px rgba(0, 0, 0, 0.3);
+background-color: rgba(255, 255, 255, 0.2); /* Darker semi-transparent white on hover */
+}
+
+
+.custom-card .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.custom-card .card-text {
+  color: #fff;
+  flex-grow: 1; /* Grow to fill available space */
+  font-size: medium;
+}
+
+
+
+/* Transition for answer */
+.card-answer {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.card-answer.show {
+  opacity: 1;
+}
+
+/* Custom shadow effect */
+.custom-card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 12px 12px rgba(0, 0, 0, 0.3);
+}
+.badge{
+  font-size:medium;
+}
+/* Animation for hero section image */
+.img-fluid {
+  animation: floatAnimation 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes floatAnimation {
+  0% {
+      transform: translateY(-5px);
+  }
+  100% {
+      transform: translateY(5px);
+  }
+}

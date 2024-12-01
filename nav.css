@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+html,body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+.ham{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1b1b1b;
+  width: 400px;
+  line-height: 40px;
+  padding: 8px 25px;
+  border-radius: 5px;
+}
+.ham label{
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  display: block;
+  cursor: pointer;
+}
+.button span{
+  float: right;
+  line-height: 40px;
+  transition: 0.5s;
+}
+.button span.rotate{
+  transform: rotate(-180deg);
+}
+.ham ul{
+  position: absolute;
+  background: #1b1b1b;
+  list-style: none;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+}
+[id^=btn]:checked + ul{
+  display: block;
+}
+.ham .menu:before{
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background: #1b1b1b;
+  right: 20px;
+  top: -10px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.ham ul li{
+  line-height: 40px;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.ham ul li label{
+  font-size: 18px;
+}
+.ham ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+.ham ul li a:hover,
+.ham ul li label:hover{
+  color: cyan;
+}
+.ham ul ul{
+  position: static;
+}
+.ham ul ul li{
+  line-height: 30px;
+  padding-left: 30px;
+  border-bottom: none;
+}
+.ham ul ul li a{
+  color: #e6e6e6;
+  font-size: 17px;
+}
+.ham ul li span{
+  font-size: 20px;
+  float: right;
+  margin-top: 10px;
+  padding: 0 10px;
+  transition: 0.5s;
+}
+.ham ul li span.rotate{
+  transform: rotate(-180deg);
+}
+input{
+  display: none;
+}
+.button span{
+  position:relative;
+  right:20px;
+}
+.ham{
+  display: none;
+}
+@media only screen and (max-width:414px){
+  .ham{
+    position: absolute;
+    top:23%;
+    display: block;
+    width:100%;
+    height:60px;
+    z-index:99;
+  }
+.menu-bar{
+  display:none;
+}
+ #hero h2{
+  position:relative;
+  top:10%;
+}
+
+.image img{
+  display: none;
+}
+.logo img{
+  position:relative;
+  top:150px;
+ width:95px;
+ display:block;
+}
+.footer{
+  margin:50px;
+  height:fit-content;
+}
+.footer-content{
+  padding:50px;
+  
+}
+.footer-content p{
+display: none;
+}
+.footer-content h3{
+  position:relative;
+  left:87px;
+  font-size:100px;
+}
+.foot img{
+  position: relative;
+  width:150px;
+  top: 100px;
+  left:28px;
+}
+.socials li{
+  position: relative;
+  left:147px;
+  top:100px;
+  letter-spacing: 5px;
+}
+.abc h2{
+  margin:1rem;
+}
+.vc h3{
+  margin:20px;
+}
+.footer-bottom{
+  position: relative;
+  left:10px;
+}
+.imagelink {
+  position:relative;
+  right:490px;
+  
+}
+.a h3{
+ display:none;
+}
+.choose h2{
+  font-size: larger;
+}}
+@media only screen and (max-width:412px){
+  .ham{
+    position: absolute;
+    top:20%;
+    display: block;
+    width:100%;
+    z-index:99;
+  }
+.menu-bar{
+  display:none;
+}
+ #hero h2{
+  position:relative;
+  top:10%;
+}
+
+.image img{
+  display: none;
+}
+.logo img{
+  position:relative;
+  top:150px;
+ width:95px;
+ display:block;
+}
+.footer{
+  margin:50px;
+  height:fit-content;
+}
+.footer-content{
+  padding:50px;
+  
+}
+.footer-content p{
+display: none;
+}
+.footer-content h3{
+  position:relative;
+  left:87px;
+  font-size:100px;
+}
+.foot img{
+  position: relative;
+  width:150px;
+  top: 100px;
+  left:28px;
+}
+.socials li{
+  position: relative;
+  left:147px;
+  top:100px;
+  letter-spacing: 5px;
+}
+.abc h2{
+  margin:1rem;
+}
+.vc h3{
+  margin:20px;
+}
+.footer-bottom{
+  position: relative;
+  left:10px;
+}
+.imagelink {
+  position:relative;
+  right:490px;
+  
+}
+.a h3{
+ display:none;
+}
+.choose h2{
+  font-size: larger;
+}}
+
+
+@media only screen and (max-width:395px){
+  .menu-bar{
+    display:none;
+  }
+  .ham{
+    position:relative;
+    top:25px;
+    display:block;
+    z-index:99;
+    width:100%;
+  }
+  .logo img{
+   display: block;
+  }
+  .footer{
+    margin:50px;
+    height:fit-content;
+  }
+  .footer-content{
+    padding:50px;
+    
+  }
+  .footer-content p{
+display: none;
+  }
+  .footer-content h3{
+    position:relative;
+    left:80px;
+    font-size:100px;
+  }
+  .foot img{
+    position: relative;
+    width:150px;
+    top: 100px;
+    left:19.5px;
+  }
+  .socials li{
+    position: relative;
+    left:140px;
+    top:100px;
+    letter-spacing: 5px;
+  }
+  .abc h2{
+    margin:1rem;
+  }
+  .vc h3{
+    margin:20px;
+  }
+  .footer-bottom{
+    position: relative;
+    left:10px;
+  }
+  .imagelink {
+    position:relative;
+    right:500px;
+    
+  }
+  .a h3{
+   display:none;
+  }
+  .choose h2{
+    font-size: larger;
+  }
+  .ham{
+    position: absolute;
+    top:25%;
+  }
+  .image img{
+    display: none;
+  }
+}
+@media only screen and (max-width:375px){
+  .ham{
+    position: absolute;
+    top:34%;
+    z-index: 99;
+  }
+  .logo img{
+  position: relative;
+  top:195px;
+  }
+  .image img{
+    display: none;
+  }
+}
+@media only screen and (max-width:360px){
+  .menu-bar{
+    display:none;
+  }
+  .ham{
+ position:absolute;
+ top:30%;
+    display:block;
+z-index: 99;
+  }
+  .image img{
+    display: none;
+  }
+  .logo img{
+    position:relative;
+    top:190px;
+   width:95px;
+   display:block;
+  }
+  .footer{
+    margin:50px;
+    height:fit-content;
+  }
+  .footer-content{
+    padding:50px;
+    
+  }
+  .footer-content p{
+display: none;
+  }
+  .footer-content h3{
+    position:relative;
+    left:75px;
+    font-size:100px;
+  }
+  .foot img{
+    position: relative;
+    width:150px;
+    top: 100px;
+  }
+  .socials li{
+    position: relative;
+    left:130px;
+    top:100px;
+    letter-spacing: 5px;
+  }
+  .abc h2{
+    margin:1rem;
+  }
+  .vc h3{
+    margin:20px;
+  }
+  .footer-bottom{
+    position: relative;
+    left:10px;
+  }
+  .imagelink {
+    position:relative;
+    right:510px;
+    
+  }
+  .a h3{
+   display:none;
+  }
+  .choose h2{
+    font-size: larger;
+  }
+}
