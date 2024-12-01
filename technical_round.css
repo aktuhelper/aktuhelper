@@ -1,0 +1,138 @@
+body {
+    
+    background:	#1B1212;
+    font-family: Arial, Helvetica, sans-serif;
+    color:whitesmoke;
+}
+h1{
+
+font-family: "Kanit", sans-serif;
+font-weight: 700;
+font-style: normal;
+color:aquamarine;
+
+}
+p{
+
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-size: medium;
+}
+.containeri {
+max-width: 100%;
+margin: 40px auto;
+padding: 20px;
+background-color:#1B1212;
+
+border-radius: 10px;
+box-shadow: 0 20px 20px rgba(208, 193, 193, 0.1);
+}
+
+.questions-container {
+margin-top: 20px;
+}
+
+.question-card {
+margin-bottom: 20px;
+padding: 20px;
+
+position: relative;
+overflow: hidden;
+}
+
+.question-card h5 {
+font-weight: bolder;
+font-size: large;
+margin-bottom: 10px;
+color: aquamarine;
+}
+
+.show-answer-btn {
+margin-top: 10px;
+padding: 5px 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+background-color: #007bff;
+color: #fff;
+transition: background-color 0.3s ease;
+}
+
+.show-answer-btn:hover {
+background-color: #0056b3;
+}
+
+.answer {
+padding: 20px;
+background-color:#171b1d;
+border-bottom: 1px solid #ccc;
+display: none;
+margin-top: 10px;
+font-size: large;
+color: #555;
+border-left: 5px solid #007bff; /* Add a left border to indicate the answer */
+}
+
+.answer p {
+margin-bottom: 0;
+color:#ccc;
+}
+
+/* Animation for answer */
+@keyframes fadeIn {
+0% {
+opacity: 0;
+transform: translateY(10px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.answer.show {
+display: block;
+animation: fadeIn 0.5s ease forwards;
+}
+
+/* Animation for show-answer-btn */
+.show-answer-btn.active {
+background-color: #17a2b8 !important;
+}
+
+.show-answer-btn.active:hover {
+background-color: #138496 !important;
+}
+.hero-section {
+background-image: url('DR TECH.jpg'); /* Replace with your own image */
+background-size: cover;
+background-position: center;
+color: #fff;
+padding: 100px 0; /* Adjust padding as needed */
+text-align: center;
+
+}
+.jumbotron{
+background:	#1B1212;
+padding: 20px;
+}
+.jumbotron p{
+    font-size: large;
+}
+.hero-section h1 {
+font-size: 3.5rem; /* Adjust font size */
+margin-bottom: 30px;
+}
+
+.hero-section p {
+font-size: 1.2rem; /* Adjust font size */
+margin-bottom: 40px;
+}
+
+.hero-section .btn {
+font-size: 1.2rem; /* Adjust font size */
+padding: 10px 30px; /* Adjust padding */
+border-radius: 5px;
+}

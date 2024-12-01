@@ -1,0 +1,966 @@
+::-webkit-scrollbar{
+  display: none;
+}
+html,body{
+  height:100%;
+}
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100%;
+}
+.menu-bar{
+  background: #252324;
+  text-align: center;
+  position: relative;
+  z-index: 99;
+  font-weight: bolder;
+}
+.menu-bar ul{
+display: inline-flex;
+list-style: none;
+color:white;
+}
+.menu-bar ul li{
+  width:120px;
+  margin:15px;
+  padding:15px;
+}
+.menu-bar ul li a{
+  text-decoration: none;
+  color: white;
+
+}
+.active, .menu-bar ul li:hover{
+  background: dodgerblue ;
+  border-radius: 3px;
+}
+.sub-menu-1{
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+  display: block;
+  position: absolute;
+  background: #252324;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+  display: block;
+  margin: 10px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li :last-child{
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+  color: aqua;
+}
+.fa fa-angle-right{
+  float:right;
+}
+.sub-menu-2{
+  display: none;
+
+}
+.hover-me:hover .sub-menu-2{
+position: absolute;
+display: block;
+margin-top: -40px;
+margin-left: 140px;
+background:#252324;
+}
+.sub-menu-3{
+  display: none;
+}
+.hover-me-2:hover .sub-menu-3{
+  position: absolute;
+display: block;
+margin-top: -40px;
+margin-left: 140px;
+background: #252324;
+}
+.sub-menu-4{
+  display: none;
+}
+.hover-me-3:hover .sub-menu-4{
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background:#252324 ;
+
+}
+ .logo img{
+     position: absolute;
+     margin-top: -15px;
+     margin-left: 5px;
+     margin-bottom: 20px;
+     z-index: 100;
+ }
+ .aktu_image{
+  margin:40px;
+  position:relative;
+  top:50px;
+ }
+ .theory{
+  position:relative;
+  margin: 50px;
+   text-align:center;
+    top:-190px;
+    right:5px;
+    font-family: 'Mali', cursive;
+    font-size:37px;
+    font-weight: bolder;
+    
+ }
+
+ .content{
+  position: relative;
+  margin:-35px;
+  font-size:20px;
+  left:80px;
+  font-style: italic;
+ 
+ }
+ .select{
+  font-family: 'Russo One', sans-serif;
+  position:relative;
+    left:550px;
+    top:-120px;
+     text-decoration: none;
+
+ }
+.pyq ul{
+  position: absolute;
+  
+  left:50%;
+  padding:0;
+  margin: 0;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+.pyq ul li{
+  list-style: none;
+  margin: 0 15px;
+
+}
+.pyq ul li .fa{
+  font-size: 100px;
+  line-height: 60px;
+  transition: .6s;
+  color:green;
+}
+.pyq ul li .fa:hover{
+color: red;
+}
+.pyq ul li a{
+  position: relative;
+  display: block;
+  width: 200px;
+  height:60px;
+  font-size:120px;
+  text-decoration:none;
+  text-align: center;
+  transition: .6s;
+  color:green;
+}
+.pyq ul li a:hover{
+  transform: translate(0,-10px);
+  color:darkblue;
+  box-shadow: red;
+}
+.pyq span{
+
+  position: relative;
+  font-size: 20px;
+  top:-90px;
+  color:black;
+  font-weight: bold;
+  font-family: 'Kalam', cursive;
+}
+footer{
+  margin-top: auto;
+  position: relative;
+  bottom: -250px;
+  left: -8px;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 150vw;
+  font-family: "'Kanit', sans-serif";
+  padding-top: 40px;
+  color: #fff;
+
+}
+.footer-content{
+  position: relative;
+  top: -200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-right:600px;
+  font-family: 'Inter', sans-serif;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight:bolder;
+  text-transform: capitalize;
+  line-height: 3rem;
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 35px;
+  font-weight: bold;
+
+}
+.socials{
+  position: relative;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+  padding-left: 6px;
+  size: 20px;
+  letter-spacing: 30px;
+  top: 30px;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 40px;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: red;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+  width:100%;
+}
+.footer-bottom p{
+position: relative;
+right:300px;
+}
+
+.av p{
+  font-size: 20px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+.foot{
+  position:relative;
+  padding-left: 100px;
+  top:40px;
+}  
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+
+.ham{
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #1b1b1b;
+width: 100%;
+line-height: 40px;
+padding: 8px 25px;
+border-radius: 5px;
+}
+.ham label{
+color: white;
+font-size: 22px;
+font-weight: 500;
+display: block;
+cursor: pointer;
+}
+.button span{
+float: right;
+line-height: 40px;
+transition: 0.5s;
+}
+.button span.rotate{
+transform: rotate(-180deg);
+}
+.ham ul{
+position: absolute;
+background: #1b1b1b;
+list-style: none;
+top: 75px;
+left: 0;
+width: 100%;
+border-radius: 5px;
+display: none;
+}
+[id^=btn]:checked + ul{
+display: block;
+}
+.ham .menu:before{
+position: absolute;
+content: '';
+height: 20px;
+width: 20px;
+background: #1b1b1b;
+right: 20px;
+top: -10px;
+transform: rotate(45deg);
+z-index: -1;
+}
+.ham ul li{
+line-height: 40px;
+padding: 8px 20px;
+cursor: pointer;
+border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.ham ul li label{
+font-size: 18px;
+}
+.ham ul li a{
+color: white;
+text-decoration: none;
+font-size: 18px;
+display: block;
+}
+.ham ul li a:hover,
+.ham ul li label:hover{
+color: cyan;
+}
+.ham ul ul{
+position: static;
+}
+.ham ul ul li{
+line-height: 30px;
+padding-left: 30px;
+border-bottom: none;
+}
+.ham ul ul li a{
+color: #e6e6e6;
+font-size: 17px;
+}
+.ham ul li span{
+font-size: 20px;
+float: right;
+margin-top: 10px;
+padding: 0 10px;
+transition: 0.5s;
+}
+.ham ul li span.rotate{
+transform: rotate(-180deg);
+}
+input{
+display: none;
+}
+.button span{
+position:relative;
+right:20px;
+}
+.ham{
+display: none;
+}
+@media only screen and (max-width:414px){
+
+      .menu-bar{
+        display:none;
+      }
+      .ham{
+     position:absolute;
+     top:4%;
+        display:block;
+    z-index: 99;
+    width:100%;
+      }
+      .image img{
+        display: none;
+      }
+      .logo img{
+        position:relative;
+        top:8px;
+       width:95px;
+       display:block;
+      }
+      .aktu_image img{
+        position: relative;
+        top:-100px;
+        left:77px;
+      }
+      .theory h4{
+        position: relative;
+        top:110px;
+        left:6px;
+        margin:10px;
+      }
+      .select h1{
+        position: relative;
+        left:-100px;
+      }
+      .pyq ul{
+        position: absolute;
+        top:140%;
+    flex-direction: column;
+    margin: 10px;
+    
+      }
+      .pyq ul li{
+        margin:90px;
+      
+      }
+      .content p{
+        display:none;
+      }
+    footer{
+    
+    min-height:100vh;
+    position: relative;
+    top:135%;
+    }
+      .footer-content{
+        padding:70px;
+        
+      }
+      .footer-content p{
+    display: none;
+      }
+      .footer-content h3{
+        position:relative;
+        left:-90px;
+        font-size:35px;
+        top:-70px;
+      }
+      .foot img{
+        position: relative;
+        width:200px;
+        top: 130px;
+        left:5px;
+      }
+      .socials li{
+        position: relative;
+        left:-90px;
+        top:190px;
+        letter-spacing: 5px;
+      }
+      .abc h2{
+        margin:1rem;
+      }
+      .vc h3{
+        margin:20px;
+      }
+      .footer-bottom{
+        position: relative;
+        left:10px;
+        width:100%;
+        top:150px;
+    display:none;
+      }
+      .footer-bottom p{
+        position: relative;
+        left:-90px;
+        font-size:10px;
+      }
+      .imagelink {
+        position:relative;
+        right:510px;
+        
+      }
+      .a h3{
+       display:none;
+      }
+      .choose h2{
+        font-size: larger;
+      }
+      .select h1{
+        display:none;
+      }
+}
+@media only screen and (max-width:412px){
+
+    .menu-bar{
+      display:none;
+    }
+    .ham{
+   position:absolute;
+   top:4%;
+      display:block;
+  z-index: 99;
+  width:100%;
+    }
+    .image img{
+      display: none;
+    }
+    .logo img{
+      position:relative;
+      top:8px;
+     width:95px;
+     display:block;
+    }
+    .aktu_image img{
+      position: relative;
+      top:-100px;
+      left:77px;
+    }
+    .theory h4{
+      position: relative;
+      top:110px;
+      left:6px;
+      margin:10px;
+    }
+    .select h1{
+      position: relative;
+      left:-100px;
+    }
+    .pyq ul{
+      position: absolute;
+      top:130%;
+  flex-direction: column;
+  margin: 10px;
+  
+    }
+    .pyq ul li{
+      margin:90px;
+    
+    }
+    .content p{
+      display:none;
+    }
+  footer{
+    display:none;
+  min-height:100vh;
+  position: relative;
+  top:130%;
+  }
+    .footer-content{
+      padding:70px;
+      
+    }
+    .footer-content p{
+  display: none;
+    }
+    .footer-content h3{
+      position:relative;
+      left:-90px;
+      font-size:35px;
+      top:-70px;
+    }
+    .foot img{
+      position: relative;
+      width:200px;
+      top: 130px;
+      left:5px;
+    }
+    .socials li{
+      position: relative;
+      left:-90px;
+      top:190px;
+      letter-spacing: 5px;
+    }
+    .abc h2{
+      margin:1rem;
+    }
+    .vc h3{
+      margin:20px;
+    }
+    .footer-bottom{
+      position: relative;
+      left:10px;
+      width:100%;
+      top:150px;
+  display:none;
+    }
+    .footer-bottom p{
+      position: relative;
+      left:-90px;
+      font-size:10px;
+    }
+    .imagelink {
+      position:relative;
+      right:510px;
+      
+    }
+    .a h3{
+     display:none;
+    }
+    .choose h2{
+      font-size: larger;
+    }
+    .select h1{
+      display:none;
+    }
+  }
+
+
+@media only screen and (max-width:395px){
+
+    
+    .menu-bar{
+      display:none;
+    }
+    .ham{
+   position:absolute;
+   top:4%;
+      display:block;
+  z-index: 99;
+  width:100%;
+    }
+    .image img{
+      display: none;
+    }
+    .logo img{
+      position:relative;
+      top:8px;
+     width:95px;
+     display:block;
+    }
+    .aktu_image img{
+      position: relative;
+      top:-100px;
+      left:75px;
+    }
+    .theory h4{
+      position: relative;
+      top:105px;
+      left:5px;
+      margin:1px;
+    }
+    .select h1{
+      position: relative;
+      left:-100px;
+    }
+    .pyq ul{
+      position: absolute;
+      top:140%;
+  flex-direction: column;
+  margin: 10px;
+  
+    }
+    .pyq ul li{
+      margin:100px;
+    
+    }
+    .content p{
+      display:none;
+    }
+  footer{
+    display:none;
+  position: relative;
+  top:150%;
+  }
+    .footer-content{
+      padding:70px;
+      
+    }
+    .footer-content p{
+  display: none;
+    }
+    .footer-content h3{
+      position:relative;
+      left:-77px;
+      font-size:35px;
+      top:-100px;
+    }
+    .foot img{
+      position: relative;
+      width:200px;
+      top: 100px;
+      left:-2px;
+    }
+    .socials li{
+      position: relative;
+      left:-85px;
+      top:150px;
+      letter-spacing: 5px;
+    }
+    .abc h2{
+      margin:1rem;
+    }
+    .vc h3{
+      margin:20px;
+    }
+    .footer-bottom{
+      position: relative;
+      left:10px;
+      width:100%;
+      top:22%;
+  
+    }
+    .footer-bottom p{
+      position: relative;
+      left:-90px;
+      font-size:10px;
+    }
+    .imagelink {
+      position:relative;
+      right:510px;
+      
+    }
+    .a h3{
+     display:none;
+    }
+    .choose h2{
+      font-size: larger;
+    }
+    .select h1{
+      display:none;
+    }
+}
+@media only screen and (max-width:390px){
+
+    
+    .menu-bar{
+      display:none;
+    }
+    .ham{
+   position:absolute;
+   top:4%;
+      display:block;
+  z-index: 99;
+  width:100%;
+    }
+    .image img{
+      display: none;
+    }
+    .logo img{
+      position:relative;
+      top:8px;
+     width:95px;
+     display:block;
+    }
+    .aktu_image img{
+      position: relative;
+      top:-100px;
+      left:50px;
+    }
+    .theory h4{
+      position: relative;
+      top:105px;
+      left:5px;
+      margin:1px;
+    }
+    .select h1{
+      position: relative;
+      left:-100px;
+    }
+    .pyq ul{
+      position: absolute;
+      top:170%;
+  flex-direction: column;
+  margin: 10px;
+  
+    }
+    .pyq ul li{
+      margin:100px;
+    
+    }
+    .content p{
+      display:none;
+    }
+  footer{
+display:none;
+  position: relative;
+  top:200%;
+  }
+    .footer-content{
+      padding:70px;
+      
+    }
+    .footer-content p{
+  display: none;
+    }
+    .footer-content h3{
+      position:relative;
+      left:-85px;
+      font-size:35px;
+      top:-70px;
+    }
+    .foot img{
+      position: relative;
+      width:200px;
+      top: 130px;
+      left:-10px;
+    }
+    .socials li{
+      position: relative;
+      left:-85px;
+      top:200px;
+      letter-spacing: 5px;
+    }
+    .abc h2{
+      margin:1rem;
+    }
+    .vc h3{
+      margin:20px;
+    }
+    .footer-bottom{
+      position: relative;
+      left:10px;
+      width:100%;
+    }
+    .footer-bottom p{
+      position: relative;
+      left:-90px;
+      font-size:10px;
+    }
+    .imagelink {
+      position:relative;
+      right:510px;
+      
+    }
+    .select h1{
+      display:none;
+    }
+    .a h3{
+     display:none;
+    }
+    .choose h2{
+      font-size: larger;
+    }
+}
+@media only screen and (max-width:360px){
+  body{
+  min-height:100vh;
+  max-width:100%;
+  overflow-x:hidden;
+  }
+  
+  .menu-bar{
+    display:none;
+  }
+  .ham{
+ position:absolute;
+ top:4%;
+    display:block;
+z-index: 99;
+width:100%;
+  }
+  .image img{
+    display: none;
+  }
+  .logo img{
+    position:relative;
+    top:8px;
+   width:95px;
+   display:block;
+  }
+  .aktu_image img{
+    position: relative;
+    top:-100px;
+    left:50px;
+  }
+  .theory h4{
+    position: relative;
+    top:105px;
+    left:5px;
+    margin:1px;
+  }
+  .select h1{
+    position: relative;
+    left:-100px;
+  }
+  .pyq ul{
+    position: absolute;
+    top:160%;
+flex-direction: column;
+margin: 10px;
+
+  }
+  .pyq ul li{
+    margin:100px;
+  
+  }
+  .content p{
+    display:none;
+  }
+footer{
+display:none;
+min-height:100vh;
+position: relative;
+top:180%;
+}
+  .footer-content{
+    padding:70px;
+    
+  }
+  .footer-content p{
+display: none;
+  }
+  .footer-content h3{
+    position:relative;
+    left:-70px;
+    font-size:35px;
+    top:-70px;
+  }
+  .foot img{
+    position: relative;
+    width:200px;
+    top: 130px;
+    left:-10px;
+  }
+  .socials li{
+    position: relative;
+    left:-75px;
+    top:200px;
+    letter-spacing: 5px;
+  }
+  .abc h2{
+    margin:1rem;
+  }
+  .vc h3{
+    margin:20px;
+  }
+  .footer-bottom{
+    position: relative;
+    left:10px;
+    width:100%;
+  }
+  .footer-bottom p{
+    position: relative;
+    left:-90px;
+    font-size:10px;
+  }
+  .imagelink {
+    position:relative;
+    right:510px;
+    
+  }
+  .select h1{
+    display:none;
+  }
+  .a h3{
+   display:none;
+  }
+  .choose h2{
+    font-size: larger;
+  }
+}
+
