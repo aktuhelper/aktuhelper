@@ -363,7 +363,7 @@
                     <span class="card__status">TAFL Quantum</span>
                   </div>          
                 </div>
-                <p class="card__description"><a href="https://drive.google.com/file/d/1TycOO0R7rhP9vti61V1LEqQtF9E60GGc/view?usp=drivesdk" target="_aktuhelper"><button type="button" class=" btn btn-outline-primary mt-4 ">Download</button></a></p>
+                <p class="card__description"><a href="https://drive.google.com/file/d/1FU3MCrAZySbBoNI31uM7X4Fr5FjpCWjj/view?usp=drive_link" target="_aktuhelper"><button type="button" class=" btn btn-outline-primary mt-4 ">Download</button></a></p>
               </div>
           </div>
           </li> 
@@ -470,7 +470,64 @@
     </div>
   </footer><!-- End Footer -->
         
+        <!-- Donation Popup -->
+<div id="donationPopup" style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+background: rgba(0,0,0,0.7); z-index: 10000; justify-content: center; align-items: center;">
+<div style="background: white; padding: 20px; width: 90%; max-width: 400px; border-radius: 10px; text-align: center; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+
+<!-- Close Icon -->
+<button id="closePopup" style="position:absolute; top:10px; right:15px; background:transparent; border:none; font-size:24px; cursor:pointer;">&times;</button>
+
+<h5 style="font-size: 18px; margin-bottom: 15px;">If you found our content helpful, please consider supporting us ❤️</h5>
+
+<!-- Razorpay Button -->
+<div style="margin-bottom: 15px;">
+ <form>
+   <script src="https://checkout.razorpay.com/v1/payment-button.js"
+           data-payment_button_id="pl_QUQGmALmR8sKaA"
+           async>
+   </script>
+ </form>
+</div>
+
+<!-- Skip Button -->
+<button id="skipDownload" class="btn btn-success btn-sm" style="font-size: 14px; padding: 6px 12px;">Next time just download</button>
+</div>
+</div>
+
+
           <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const popup = document.getElementById("donationPopup");
+              const skipBtn = document.getElementById("skipDownload");
+              const closeBtn = document.getElementById("closePopup");
+              let downloadLink = null;
+          
+              // Intercept all download buttons
+              document.querySelectorAll("a .btn-outline-primary").forEach(button => {
+                button.addEventListener("click", function (e) {
+                  e.preventDefault(); // stop immediate download
+                  downloadLink = this.closest("a").href;
+                  popup.style.display = "flex";
+                });
+              });
+          
+              // "Next time just download"
+              skipBtn.addEventListener("click", function () {
+                popup.style.display = "none";
+                if (downloadLink) {
+                  window.open(downloadLink, "_blank");
+                }
+              });
+          
+              // Close popup (X icon)
+              closeBtn.addEventListener("click", function () {
+                popup.style.display = "none";
+              });
+            });
+          </script>
+          
         
           <!-- Vendor JS Files -->
           <script src="assets/vendor/aos/aos.js"></script>
