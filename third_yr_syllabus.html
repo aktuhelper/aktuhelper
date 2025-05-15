@@ -273,7 +273,7 @@
                     your issue. </p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                    
-                    <a href="3rd_yr_cs_syllabus.pdf" target="_blank" button type="button" class="btn btn-primary btn-lg">Download</button></a>
+                  <button type="button" class="btn btn-primary btn-lg" onclick="showDonationModal()">Download</button>
                 </div>
             </div>
         </div>
@@ -348,6 +348,51 @@
     </div>
   </footer><!-- End Footer -->
     
+    <!-- Donation Modal -->
+<div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="donationModalLabel">Support Aktu Helper</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>if you find content helpful, consider making a donation to support us..</p>
+        
+        <!-- Razorpay Button Code START -->
+        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QUQGmALmR8sKaA" async> </script> </form>
+        <!-- Razorpay Button Code END -->
+
+        <hr>
+        <button class="btn btn-secondary btn-sm mt-2" id="skipDonationBtn">Next Time, Just Download</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      <script>
+        function showDonationModal() {
+          var donationModal = new bootstrap.Modal(document.getElementById('donationModal'));
+          donationModal.show();
+        }
+      
+        document.getElementById('skipDonationBtn').addEventListener('click', function () {
+          // Trigger file download after closing modal
+          const pdfUrl = '3rd_yr_cs_syllabus.pdf'; // Update path if needed
+          const link = document.createElement('a');
+          link.href = pdfUrl;
+          link.download = pdfUrl.split('/').pop(); // Triggers download
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+      
+          // Hide the modal
+          bootstrap.Modal.getInstance(document.getElementById('donationModal')).hide();
+        });
+      </script>
+      
       <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     
       <!-- Vendor JS Files -->
