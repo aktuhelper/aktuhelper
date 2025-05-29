@@ -217,6 +217,33 @@
         Third Year Quantums
     
       </h1>
+       <!-- Top Contributors Button -->
+ <div class="text-center mt-3">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contributorsModal">
+    Our Top Contributors
+  </button>
+</div>
+<!-- Contributors Modal -->
+<div class="modal fade" id="contributorsModal" tabindex="-1" aria-labelledby="contributorsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contributorsModalLabel">Top Contributors of Month</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="contributors-list" class="list-group">
+          <!-- JavaScript will insert contributors here -->
+        </ul>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <a href="topContributor.html" class="btn btn-outline-primary">View More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
       <br>
       <ul class="cards">
 
@@ -238,22 +265,7 @@
             </div>
           </div>
         </li>
-       <li>
-          <div class="card">
-            <img src="quantum front.jpg" class="card__image" alt="" />
-            <div class="card__overlay">       
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
-                <img class="card__thumb" src="Birthday-removebg-preview.png" alt="" />
-                <div class="card__header-text">
-                  <h3 class="card__title">Idea to Business Model</h3>
-                  <span class="card__status">Idea to Business Model Quantum</span>
-                </div>
-              </div>
-              <p class="card__description"><a href="https://drive.google.com/file/d/1kkNOEWEoZ1xdR-fA3dU_Gy7EOvfsomsq/view?usp=drive_link" target="_aktuhelper" ><button type="button" class=" btn btn-outline-primary mt-4 ">Download</button></a></p>
-            </div>
-          </div>
-       </li>
+       
         <li>
           <div class="card">
             <img src="quantum front.jpg" class="card__image" alt="" />
@@ -686,6 +698,9 @@ background: rgba(0,0,0,0.7); z-index: 10000; justify-content: center; align-item
           <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
           <script src="assets/vendor/php-email-form/validate.js"></script>
           <!-- Template Main JS File -->
+           
+
+  <script src="contributors.js"></script>
           <script src="assets/js/main.js"></script>
 </body>
 </html>
