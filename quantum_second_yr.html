@@ -216,6 +216,33 @@
         Second Year Quantums
     
       </h1>
+       <!-- Top Contributors Button -->
+ <div class="text-center mt-3">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contributorsModal">
+    Our Top Contributors
+  </button>
+</div>
+<!-- Contributors Modal -->
+<div class="modal fade" id="contributorsModal" tabindex="-1" aria-labelledby="contributorsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contributorsModalLabel">Top Contributors of Month</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="contributors-list" class="list-group">
+          <!-- JavaScript will insert contributors here -->
+        </ul>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <a href="topContributor.html" class="btn btn-outline-primary">View More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
       <br>
       <ul class="cards">
 
@@ -363,7 +390,7 @@
                     <span class="card__status">TAFL Quantum</span>
                   </div>          
                 </div>
-                <p class="card__description"><a href="https://drive.google.com/file/d/1TycOO0R7rhP9vti61V1LEqQtF9E60GGc/view?usp=drivesdk"><button type="button" class=" btn btn-outline-primary mt-4 ">Download</button></a></p>
+                <p class="card__description"><a href="https://drive.google.com/file/d/1FU3MCrAZySbBoNI31uM7X4Fr5FjpCWjj/view?usp=drive_link" target="_aktuhelper"><button type="button" class=" btn btn-outline-primary mt-4 ">Download</button></a></p>
               </div>
           </div>
           </li> 
@@ -537,6 +564,9 @@ background: rgba(0,0,0,0.7); z-index: 10000; justify-content: center; align-item
           <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
           <script src="assets/vendor/php-email-form/validate.js"></script>
           <!-- Template Main JS File -->
+           
+
+  <script src="contributors.js"></script>
           <script src="assets/js/main.js"></script>
 </body>
 </html>
