@@ -218,6 +218,33 @@
         Fourth Year Quantums
     
       </h1>
+       <!-- Top Contributors Button -->
+ <div class="text-center mt-3">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contributorsModal">
+    Our Top Contributors
+  </button>
+</div>
+<!-- Contributors Modal -->
+<div class="modal fade" id="contributorsModal" tabindex="-1" aria-labelledby="contributorsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contributorsModalLabel">Top Contributors of Month</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="contributors-list" class="list-group">
+          <!-- JavaScript will insert contributors here -->
+        </ul>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <a href="topContributor.html" class="btn btn-outline-primary">View More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
       <br>
       <ul class="cards">
 
@@ -423,7 +450,7 @@ background: rgba(0,0,0,0.7); z-index: 10000; justify-content: center; align-item
 <!-- Close Icon -->
 <button id="closePopup" style="position:absolute; top:10px; right:15px; background:transparent; border:none; font-size:24px; cursor:pointer;">&times;</button>
 
-<h5 style="font-size: 18px; margin-bottom: 15px;">If you found our content helpful, please consider supporting us ❤️</h5>
+<h5 style="font-size: 18px; margin-bottom: 15px;">If you found our content helpful, please consider supporting us with small amount of ₹20 or any amount to keep them free for everyone ❤️</h5>
 
 <!-- Razorpay Button -->
 <div style="margin-bottom: 15px;">
@@ -482,6 +509,9 @@ background: rgba(0,0,0,0.7); z-index: 10000; justify-content: center; align-item
           <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
           <script src="assets/vendor/php-email-form/validate.js"></script>
           <!-- Template Main JS File -->
+           
+
+  <script src="contributors.js"></script>
           <script src="assets/js/main.js"></script>
 </body>
 </html>
